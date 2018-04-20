@@ -11,35 +11,23 @@
 
 	<div class="wrap">
 		
-		<div class="container">
-			<!--<div class="centered"><h1>The Home<br /><span style='font-size: 20px'>of</span><br />Billie Marchant</h1></div>-->
-			<div class="centered"><h1>The Home<br /><span style='font-size: 20px'>of</span><br />Billie Marchant</h1></div>
-		</div>
-		
 		<header class="mainHeader">
-			<div id="rcorners3"></div>			
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="tutorials.html">Tutorials</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
+			<span include-html="inc/header.html"></span>
 		</header>		
 
 		<article>
-			<h2>Home</h2>
-			<p>Welcome to my small place on the internet.<br /></p>
-			<p>WORK IN PROGRESS!<br />
-			<p>This is my first HTML5 website.  I'm still in the process of learning HTML5 as well as PHP, MySQL and CSS. All you see here is made by hand by me, even the coding was done by hand, no WYSIWYG software here and no template or ready made pages!</p>
+			<span include-html="inc/content_home.html"></span>
 		</article>
 
 		<footer>
-			<small>Copyright &copy; 2017-<script>document.write(new Date().getFullYear());</script> Billie Marchant.</small><br />
-			<a href="http://www.w3.org/html/logo/"><img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-graphics-semantics.png" width="98" height="32" alt="HTML5 Powered with CSS3/Styling, Graphics, 3D &amp; Effects, and Semantics" title="HTML5 Powered with CSS3/Styling, Graphics, 3D &amp; Effects, and Semantics"></a>
+			<small>Copyright &copy; 2017-<script>document.write(new Date().getFullYear());</script> BillieMarchant.com</small>
+			<span include-html="inc/footer.html"></span>
 		</footer>
 
 	</div>
-  
+ 
+	<script src="js/func.js"></script>
+	<script>includeHTML();</script>
+	
 </body>
 </html>
